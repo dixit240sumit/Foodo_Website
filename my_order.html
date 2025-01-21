@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order - Foodo</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .order-details {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .order-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-status {
+            color: green;
+            font-weight: bold;
+        }
+
+        .order-items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .order-items-table th, .order-items-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .order-items-table th {
+            background-color: #f2f2f2;
+        }
+
+        .total-price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .order-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .order-footer button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .order-footer button:hover {
+            background-color: #ff4c3b;
+        }
+
+        .back-button {
+            background-color: #ddd;
+        }
+
+        .back-button:hover {
+            background-color: #bbb;
+        }
+
+        .order-time {
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodo</h1>
+</header>
+
+<div class="container">
+    <div class="order-details">
+        <div class="order-header">
+            Order #12345
+            <span class="order-status">Delivered</span>
+        </div>
+        <div class="order-time">
+            Ordered on: 21st Jan 2025, 6:30 PM
+        </div>
+
+        <table class="order-items-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td>1</td>
+                    <td>$12.00</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td>French Fries</td>
+                    <td>2</td>
+                    <td>$5.00</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Shake</td>
+                    <td>1</td>
+                    <td>$6.00</td>
+                    <td>$6.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-price">
+            Total: $28.00
+        </div>
+
+        <div class="order-footer">
+            <button class="back-button">Back to Orders</button>
+            <button>Track Another Order</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

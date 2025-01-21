@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOODO - Food Delivery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <style>
+    /* Basic reset and styling */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #FF5722;
+      padding: 20px 0;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin: 0;
+    }
+    header nav {
+      margin-top: 10px;
+    }
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1501594907354-b94d3b67c2cc?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg4NjgyMTQ&ixlib=rb-1.2.1&q=80&w=1080');
+      background-size: cover;
+      text-align: center;
+      color: white;
+      padding: 150px 0;
+    }
+    .hero h2 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .search-container {
+      margin-top: 20px;
+    }
+    .search-bar {
+      padding: 10px;
+      font-size: 1.2em;
+      width: 60%;
+      margin: 0 10px;
+    }
+    .search-btn {
+      padding: 10px 20px;
+      background-color: #FF9800;
+      border: none;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    .search-btn:hover {
+      background-color: #F57C00;
+    }
+    .category {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+    .category div {
+      text-align: center;
+    }
+    .category img {
+      width: 100px;
+      height: 100px;
+    }
+    .featured {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .restaurant-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .restaurant-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .restaurant-card:hover {
+      transform: scale(1.05);
+    }
+    .restaurant-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .restaurant-card h3 {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+    .restaurant-card p {
+      color: #777;
+    }
+    .view-menu-btn {
+      background-color: #FF5722;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .view-menu-btn:hover {
+      background-color: #D84315;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <h1>FOODO</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#">Restaurants</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Get Your Favorite Food Delivered Fast</h2>
+    <div class="search-container">
+      <input type="text" class="search-bar" placeholder="What are you craving?" />
+      <button class="search-btn">Search</button>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="category">
+    <div>
+      <img src="https://images.unsplash.com/photo-1571607388437-b3c9f0b91c0a?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAzMjM&ixlib=rb-1.2.1&q=80&w=1080" alt="Pizza">
+      <h3>Pizza</h3>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1596182565731-7aab58f89b8e?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAzNTI&ixlib=rb-1.2.1&q=80&w=1080" alt="Burgers">
+      <h3>Burgers</h3>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1567127483-49a74d57cd5f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAzMzQ&ixlib=rb-1.2.1&q=80&w=1080" alt="Sushi">
+      <h3>Sushi</h3>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1570971217863-003773676ff6?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAzMTY&ixlib=rb-1.2.1&q=80&w=1080" alt="Indian">
+      <h3>Indian</h3>
+    </div>
+  </section>
+
+  <!-- Featured Restaurants Section -->
+  <section class="featured">
+    <h2>Featured Restaurants</h2>
+    <div class="restaurant-list">
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1590244278401-5be0193839c5?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAxODk&ixlib=rb-1.2.1&q=80&w=1080" alt="Pizza Palace">
+        <h3>Pizza Palace</h3>
+        <p>Italian | 4.5⭐</p>
+        <a href="#" class="view-menu-btn">View Menu</a>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1614261266548-576d23c10b53?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAyNzc&ixlib=rb-1.2.1&q=80&w=1080" alt="Burger King">
+        <h3>Burger King</h3>
+        <p>Fast Food | 4.2⭐</p>
+        <a href="#" class="view-menu-btn">View Menu</a>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1576669756762-623245fcbf16?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1Nzh8MHxhcHBsaWNhdGlvbiUyQ3Jlc3RhdXJhdHxlbnwwfHx8fDE2Nzg5MDAyMDE&ixlib=rb-1.2.1&q=80&w=1080" alt="Sushi House">
+        <h3>Sushi House</h3>
+        <p>Japanese | 4.7⭐</p>
+        <a href="#" class="view-menu-btn">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>FOODO &copy; 2025 | Privacy Policy | Terms & Conditions</p>
+  </footer>
+
+</body>
+</html>

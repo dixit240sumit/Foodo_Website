@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHAN KATHI ROLLS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .menu {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .head {
+      text-align: center;
+      padding: 40px 0;
+      background-color: #f5a623;
+      color: #fff;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 15px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      margin: 0 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #444;
+      border-radius: 4px;
+    }
+
+    .type {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin: 30px 0;
+      color: #333;
+    }
+
+    .item {
+      display: flex;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 15px 0;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .info {
+      display: flex;
+      flex: 1;
+    }
+
+    .info img {
+      max-width: 200px;
+      max-height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .info div {
+      flex: 1;
+    }
+
+    .info h3 {
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .actions button {
+      background-color: #f5a623;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .actions button:hover {
+      background-color: #e5941f;
+    }
+
+    .offer {
+      font-size: 0.9em;
+      color: #e74c3c;
+      font-weight: 600;
+    }
+
+    .rating {
+      font-size: 1em;
+      color: #f39c12;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: #f5a623;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info img {
+        max-width: 150px;
+        max-height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+    <a href="#">About Us</a>
+  </div>
+
+  <div class="menu">
+    <div class="head">KHAN KATHI ROLLS</div>
+    
+    <div class="type">Veg Options</div>
+    
+    <!-- Menu Item 1 -->
+    <div class="item">
+      <div class="info">
+        <img src="https://www.sailusfood.com/wp-content/uploads/2010/11/kathi-roll1.jpg" alt="veg roll">
+        <div>
+          <h3>Veg. Kathi Roll</h3>
+          <p>₹60  <span class="offer">10% OFF USE SPECIALS OFFERS</span></p>
+          <p class="rating">⭐ 4.7 (345)</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <!-- Menu Item 2 -->
+    <div class="item">
+      <div class="info">
+        <img src="https://img.freepik.com/premium-photo/cottage-cheese-paneer-kathi-roll-wrap-also-known-as-kolkata-style-spring-rolls-vegetarians-indian-food_466689-52310.jpg?w=2000" alt="paneer kathi roll">
+        <div>
+          <h3>Paneer Kathi Roll</h3>
+          <p>₹100 <span class="offer">15% OFF USE COMBO</span></p>
+          <p class="rating">⭐ 4.7 (400)</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- More menu items can follow here -->
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>FOODO &copy; 2025 | <span class="footer-links"><a href="#">Privacy Policy</a>| <a href="#">Terms & Conditions</a></span></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Foodo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .order-list {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-list-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .order-info {
+            flex: 1;
+        }
+
+        .order-info p {
+            margin: 5px 0;
+        }
+
+        .view-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .view-button:hover {
+            background-color: #ff4c3b;
+        }
+
+        .order-footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .order-footer a {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .order-footer a:hover {
+            background-color: #ff4c3b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodo</h1>
+</header>
+
+<div class="container">
+    <div class="order-list">
+        <div class="order-list-header">
+            My Orders
+        </div>
+
+        <div class="order-item">
+            <div class="order-info">
+                <p><strong>Order #12345</strong></p>
+                <p>Status: Delivered</p>
+                <p>Ordered on: 21st Jan 2025</p>
+            </div>
+            <button class="view-button" onclick="window.location.href='order-details.html'">View Order</button>
+        </div>
+
+        <div class="order-item">
+            <div class="order-info">
+                <p><strong>Order #12346</strong></p>
+                <p>Status: Pending</p>
+                <p>Ordered on: 20th Jan 2025</p>
+            </div>
+            <button class="view-button" onclick="window.location.href='order-details.html'">View Order</button>
+        </div>
+
+        <div class="order-item">
+            <div class="order-info">
+                <p><strong>Order #12347</strong></p>
+                <p>Status: Delivered</p>
+                <p>Ordered on: 18th Jan 2025</p>
+            </div>
+            <button class="view-button" onclick="window.location.href='order-details.html'">View Order</button>
+        </div>
+    </div>
+
+    <div class="order-footer">
+        <a href="index.html">Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>

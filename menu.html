@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cafe Connections</title>
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff6f00;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo h1 {
+      color: white;
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .cart button {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1618922252419-6ef33d0b67d0') center center no-repeat;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 15px;
+    }
+
+    .cta-btn {
+      background-color: #ff6f00;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.2em;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    .cta-btn:hover {
+      background-color: #ff8a3c;
+    }
+
+    /* Menu Section */
+    .menu {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .menu h2 {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .item {
+      display: flex;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 15px 0;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .item img {
+      max-width: 180px;
+      max-height: 120px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h3 {
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+
+    .actions button {
+      background-color: #ff6f00;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .actions button:hover {
+      background-color: #ff8a3c;
+    }
+
+    .offer {
+      font-size: 0.9em;
+      color: #e74c3c;
+      font-weight: 600;
+    }
+
+    .rating {
+      font-size: 1em;
+      color: #f39c12;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .footer-content a {
+      color: #ff6f00;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .footer-content a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-socials {
+      margin-top: 15px;
+    }
+
+    .footer-socials a {
+      color: #ff6f00;
+      margin: 0 15px;
+      font-size: 1.5em;
+    }
+
+    .footer-socials a:hover {
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>THE CAFE CONNECTIONS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#coffee">HOME</a></li>
+        <li><a href="#tea">View Order</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <button>🛒 Cart (0)</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="Hero">
+    <h2>Welcome to The Cafe Connections</h2>
+    <p>Enjoy the best food and beverages delivered to you!</p>
+    <button class="cta-btn">Explore Menu</button>
+  </section>
+
+  <!-- Menu Section: Coffee -->
+  <section id="coffee" class="menu">
+    <h2>COFFEE</h2>
+
+    <div class="item">
+      <div class="info">
+        <img src="https://th.bing.com/th/id/OIP.sORUCLQs6IFavbrcEWRPgAHaE8?rs=1&pid=ImgDetMain" alt="Cappuccino">
+        <div>
+          <h3>Cappuccino <span class="hot"></span></h3>
+          <p>₹60 <span class="offer">BUY 2, GET 1 FREE!</span></p>
+          <p class="rating">⭐ 4.7 (380)</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="info">
+        <img src="https://images.onlymyhealth.com/imported/images/2013/November/16_Nov_2013/coffee-sleep-650x325.jpg" alt="Cold Coffee">
+        <div>
+          <h3>Cold Coffee <span class="cold"></span></h3>
+          <p>₹80 <span class="offer">ORDER 2, SAVE ₹50</span></p>
+          <p class="rating">⭐ 4.0 (403)</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section: Tea -->
+  <section id="tea" class="menu">
+    <h2>TEA</h2>
+
+    <div class="item">
+      <div class="info">
+        <img src="https://th.bing.com/th/id/R.de67d37b827159868ac62d0b8234d921?rik=3JcbdPkWD7Vc0g&riu=http%3a%2f%2fweknowyourdreams.com%2fimages%2ftea%2ftea-03.jpg&ehk=BmoYRgMWUW6NUOnmLX3O%2feLTqeQrsvzja2UkxCPkR1c%3d&risl=&pid=ImgRaw&r=0" alt="Simple Tea">
+        <div>
+          <h3>Simple Tea <span class="hot"></span></h3>
+          <p>₹20 <span class="offer">ORDER 5 ONLY FOR ₹70</span></p>
+          <p class="rating">⭐ 3.8(454)</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="info">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20240705/pngtree-traditional-indian-masala-chai-image_15958289.jpg" alt="Masala Tea">
+        <div>
+          <h3>Masala Tea <span class="hot"></span></h3>
+          <p>₹30 <span class="offer">Free WITH COMBO MEAL!</span></p>
+          <p class="rating">⭐ 4.1 (243)</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>FOODO &copy; 2025 | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+      <div class="footer-socials">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
